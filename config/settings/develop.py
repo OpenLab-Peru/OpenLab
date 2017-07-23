@@ -4,7 +4,7 @@ from .common import *  # noqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -34,3 +34,7 @@ DATABASES = {
         'ATOMIC_TRANSACTIONS': True
     }
 }
+
+
+# snapshot config
+TEST_RUNNER = 'snapshottest.django.TestRunner'

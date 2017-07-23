@@ -37,6 +37,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
+    'apps.people',
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -44,7 +45,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 # Configuration to Graphene
 GRAPHENE = {
-    'SCHEMA': 'app.schema.schema'  # Where your Graphene schema lives
+    'SCHEMA': 'apps.schemas.schema'  # Where your Graphene schema lives
 }
 
 

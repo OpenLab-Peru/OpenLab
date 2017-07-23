@@ -1,0 +1,7 @@
+django < 1.12
+django-dotenv
+django-model-utils
+graphene-django
+pip-tools
+psycopg2
+unipath
